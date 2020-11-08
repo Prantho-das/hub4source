@@ -1,0 +1,63 @@
+.Service{ 
+  position: relative;
+   .serviceimg {
+    position: absolute;
+    top: 0rem;
+    left: 40%;
+    width: 7rem;
+    opacity: 0.6;
+  }
+  .scard {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  a{
+      text-decoration:none;
+      text-transform: capitalize;
+  }
+  i{
+      font-size: 2rem;
+      z-index: 12;
+      color:$ncolor;
+  }
+  .stitle {
+    font-family: $navfont;
+    font-size: 1.6rem !important;
+    z-index: 12;
+    text-transform: capitalize;
+  }
+  p {
+    font-family: $hfont;
+    z-index: 12;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top:0rem;
+    left: 0rem;
+    width: 1.4%;
+    height: 100%;
+    background-color: $mcolor;
+    transition:0.3s ease-in-out;
+    z-index: -11;
+  }
+
+&:hover:before{ 
+    background-color: $ncolor;
+    width: 100%;
+}
+&:hover i{ 
+    color: white;
+}
+&:hover .stitle{ 
+   color: white;
+}
+&:hover p{ 
+   color: white !important;
+}
+&:hover a{ 
+   color: white !important;
+}
+}
+}

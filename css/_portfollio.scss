@@ -1,0 +1,30 @@
+#portfolio {
+  background-color: $bgcolor;
+  #portfolio-flters {
+    padding: 0;
+    margin: 5px 0 35px 0;
+    list-style: none;
+    text-align: center;
+    li {
+      cursor: pointer;
+      margin: 15px 15px 15px 0;
+      margin-bottom: 15px;
+      display: inline-block;
+      padding: 6px 10px;
+      font-size: 16px;
+      line-height: 20px;
+      color: #413e66;
+      margin-bottom: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+#portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
+    color: #1bb1dc;
+}
+.portfolio-item .portfolio-wrap {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+}
+}

@@ -1,0 +1,21 @@
+.reg_form{
+    .ru{
+        font-family: $hfont;
+    }
+   
+input,select{
+    margin: 0.5rem 0rem;
+    padding: 0.7rem 0.5rem;
+    font-family: $hfont;
+    &:focus{
+        border-color: #394fa2 !important;
+        box-shadow: 0 0 0 0.1rem #394fa2 !important;
+    }
+}
+ .ru-main{
+        input{
+            margin:0rem;
+            padding: 0rem;
+        }
+    }
+}

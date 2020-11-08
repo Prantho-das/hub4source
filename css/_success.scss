@@ -1,0 +1,29 @@
+//success
+.Success{
+  .scrow{
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: 2;
+  }
+h4{
+    padding: 15px 0px 0px;
+    margin: 0px 0px 0px 50px;
+    font-family:$navfont,Raleway;
+    font-size: 1.3rem;
+    color: rgb(72, 72, 72);
+}
+i {
+  display: block;
+  font-size: 36px;
+  color: #3498db;
+  float: left;
+}
+span {
+  font-size: 36px;
+  line-height: 30px;
+  display: block;
+  font-weight: 700;
+  color: #222222;
+  margin-left: 50px;
+}
+}

@@ -1,0 +1,15 @@
+.about{
+  .img_pic{
+    overflow: hidden;
+    transition: 2s ease-in-out;
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+.about_intro {
+  font-family: $navfont;
+  .ext {
+    color: $ncolor;
+  }
+}
+}

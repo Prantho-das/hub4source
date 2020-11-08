@@ -1,0 +1,199 @@
+.additional {
+  height: 100vh;
+  position: relative;
+  background-image: url("../img/intro-bg.jpg");
+  background-size: cover;
+  background-position: center;
+    .row{
+        padding-top: 5rem;
+    }
+  .sub_nav {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    img {
+      width: 11rem;
+    }
+  }
+  h1 {
+    padding: 9rem 0rem;
+    font-family: $navfont;
+    font-weight: bold;
+    span {
+      color: $ncolor;
+      animation: addia 5s ease-in-out infinite;
+      // animation-direction: alternate;
+    }
+  }
+  @keyframes addia {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    80% {
+      opacity: 0;
+    }
+  }
+}
+main {
+  .bread {
+    background-color: $ncolor;
+  }
+  ul.breadinernal {
+    padding: 10px 16px;
+    list-style: none;
+  }
+
+  /* Display list items side by side */
+  ul.breadinernal li {
+    display: inline;
+    font-size: 1.3rem;
+  }
+
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadinernal li + li:before {
+    padding: 8px;
+    color: white;
+    content: "//";
+  }
+
+  /* Add a color to all links inside the list */
+  ul.breadinernal li {
+    color: rgba(255, 255, 255, 0.781);
+    text-decoration: none;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover{
+      color:white !important;
+    }
+  }
+
+  /* Add a color on mouse-over */
+  ul.breadinernal li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+  .course_module {
+    .row {
+      .course {
+        border: 1px solid #d5d5d5;
+        border-radius: 10px;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+
+        .sectin-list {
+          list-style-type: none;
+          margin-top: 1.3rem;
+          padding-right: 0.3rem;
+          position: relative;
+          li::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            font-family: $hfont;
+            border-radius: 50%;
+            background: $mcolor;
+            border: 6px solid #d9f5ff;
+            left: 0rem;
+          }
+        }
+      }
+    }
+  }
+  //cource ammount
+  .cource-time-box {
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+    transition: 0.2s linear;
+    &::before{
+      content: "";
+      position: absolute;
+      background-color: $mcolor;
+      left: 0;
+      top:0;
+      border:1px solid $ncolor;
+      opacity: 0.2;
+      width: 65%;
+      height: 55%;
+      border-bottom-right-radius: 80%;
+      z-index: -9;
+      transition: 0.4s linear;
+    }
+    &:hover:before{
+      border-radius: 0%;
+      height: 100%;
+      width: 100%;
+    }
+    &:hover{
+      box-shadow: 2.4px 5px 9px rgba(0, 0, 0, 0.384);
+    }
+    .course_badge{
+      position: absolute;
+      width: 6rem;
+      top: 1rem;
+      right:1rem;
+    }
+    font-family: $hfont;
+    h2,h5{
+      font-family: $navfont;
+      font-weight:600;
+    }
+    border: 1.3px solid #d5d5d5;
+    margin-top: 25px;
+    color: black;
+    //color: white;
+    //background: url(../img/additional/Group-721-1.png);
+    border-radius: 10px;
+    background-size: cover;
+    padding: 30px;
+    padding-bottom: 50px;
+    .default-button {
+      //color: #fff;
+      font-family: $hfont;
+      color: black;
+      border: 3px solid $mcolor;
+      font-size: 14px;
+      letter-spacing: 0.6px;
+      line-height: 5;
+      padding: 10px 20px;
+      font-weight: 600;
+      border-radius: 72px;
+      outline: none !important;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        background-color: $mcolor;
+        color: white;
+      }
+    }
+  }
+  .carere{
+      background-color: $bgcolor;
+      p{
+          font-family: $hfont;
+      }
+       .sectin-list {
+          list-style-type: none;
+          margin-top: 1.3rem;
+          padding-right: 0.3rem;
+          position: relative;
+          li::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            font-family: $hfont;
+            border-radius: 50%;
+            background: $mcolor;
+            border: 6px solid #d9f5ff;
+            left: 0rem;
+          }
+        }
+  }
+}

@@ -1,0 +1,90 @@
+.head {
+  background: url(../img/intro-bg.jpg) center top no-repeat;
+  z-index: 99999;
+  .navbar-toggler {
+    animation: navglow 2s linear alternate-reverse infinite;
+  }
+  @keyframes navglow {
+    from{
+      transform: scale(1.36);
+    }
+    to{
+      transform: scale(0.9);
+    }
+  }
+
+  .navactive {
+    background: $scolor !important;
+    padding: 0rem !important;
+    opacity: 0.97 !important;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    transition: 0.3s ease-in-out;
+    a {
+      font-size: 1.3rem !important;
+      transition: 0.3s ease-in-out;
+    }
+    .navbar-brand {
+      width: 7rem !important;
+      transition: 0.3s ease-in-out;
+    }
+  }
+  nav {
+    font-family: $navfont;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+
+    .nav-link {
+      color: black !important;
+      transition: 0.1s ease-in-out;
+    }
+    .nav-item {
+      position: relative;
+      transition: 0.1s linear;
+    }
+    .nav-item:hover {
+      transform: scale(1.05);
+    }
+    .nav-item::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 0%;
+      height: 3px;
+      background: $ncolor;
+      transition: 0.3s linear;
+    }
+    .nav-item::after {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      width: 0%;
+      height: 3px;
+      background: $ncolor;
+      transition: 0.3s linear;
+    }
+    .nav-item:hover:before {
+      width: 50%;
+    }
+    .nav-item:hover:after {
+      width: 50%;
+    }
+
+    .nav-link:hover {
+      color: $ncolor !important;
+    }
+    .na .fa-hamburger {
+      font-size: 1.6rem;
+    }
+  }
+  //carousel
+}
+.cont{
+  position: relative;
+}
